@@ -15,56 +15,184 @@
 </head>
 
 <body>
-  <header class="header bg-light">
+  <header class="header"></header>
+
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-3">
-        <nav class="d-flex flex-column">
-          <h1 class="pb-2"><a href="index.html"><img src="assets/images/logo-ANSWER.svg" alt="logo"></a></h1>
-          <ul class="list-unstyled">
-            <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
-                  class="material-icons pe-3">
-                  assessment
-                </span>Dashboard</a></li>
-            <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
-                  class="material-icons pe-3">
-                  question_answer
-                </span>Question</a></li>
-            <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
-                  class="material-icons pe-3">
-                  assignment
-                </span>Assignment</a></li>
-            <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
-                  class="material-icons pe-3">
-                  video_library
-                </span>Course</a></li>
-            <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
-                  class="material-icons pe-3">
-                  group
-                </span>Admin</a></li>
-            <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
-                  class="material-icons pe-3">
-                  settings
-                </span>Setting</a></li>
-          </ul>
-        </nav>
-        <div class="nav-user">
-          <div class="d-flex align-items-center">
-            <div class="flex-shrink-0">
-              <img src="assets/images/andychen.jpeg" alt="user-pic" class="me-3">
+        <div class="col-3 bg-light">
+            <nav class="d-flex flex-column">
+                <h1 class="pb-2"><a href="index.html"><img src="assets/images/logo-ANSWER.svg" alt="logo"></a></h1>
+                <ul class="list-unstyled">
+                    <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
+                                class="material-icons pe-3">
+                                assessment
+                            </span>Dashboard</a></li>
+                    <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
+                                class="material-icons pe-3">
+                                question_answer
+                            </span>Question</a></li>
+                    <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
+                                class="material-icons pe-3">
+                                assignment
+                            </span>Assignment</a></li>
+                    <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
+                                class="material-icons pe-3">
+                                video_library
+                            </span>Course</a></li>
+                    <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
+                                class="material-icons pe-3">
+                                group
+                            </span>Admin</a></li>
+                    <li class="pb-2"><a href="#" class="nav-link link-dark active fw-bold" aria-current="page"><span
+                                class="material-icons pe-3">
+                                settings
+                            </span>Setting</a></li>
+                </ul>
+            </nav>
+            <div class="nav-user">
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <img src="assets/images/andychen.jpeg" alt="user-pic" class="me-3">
+                    </div>
+                    <div class="flex-grow-1">
+                        <p class="h6 fw-bold mb-1">Andy Chen</p>
+                        <a href="mailto:andy0401@mail.com" class="fw-normal">andy0401@mail.com</a>
+                    </div>
+                </div>
             </div>
-            <div class="flex-grow-1">
-              <p class="h6 fw-bold mb-1">Andy Chen</p>
-              <a href="mailto:andy0401@mail.com" class="fw-normal">andy0401@mail.com</a>
-            </div>
-          </div>
         </div>
-      </div>
+        <main class="main col-9 ps-5 pe-5">
+            <div class="header d-flex align-items-center justify-content-between">
+                <div class="d-flex">
+                    <p class="fs-4 fw-bold">Assignment</p>
+                    <div class="dropdown">
+                        <button class="btn fs-6 fw-bold dropdown-toggle ps-5" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            All Courses
+                        </button>
+                        <ul class="dropdown-menu fw-normal" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">aaa</a></li>
+                            <li><a class="dropdown-item" href="#">bbb</a></li>
+                            <li><a class="dropdown-item" href="#">ccc</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="list-unstyled d-flex gap-4">
+                    <li><a href="#" class="link-dark active"><span class="material-icons">
+                                search
+                            </span></a></li>
+                    <li><a href="#" class="link-dark active"><span class="material-icons">
+                                notifications_active
+                            </span></a></li>
+                </ul>
+            </div>
+            <div class="col-9 d-flex gap-3">
+                <div class="col-5 todo-list">
+                    <div class="dropdown">
+                        <button class="btn fs-6 dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            All (4)
+                        </button>
+                        <ul class="dropdown-menu fw-normal" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">aaa</a></li>
+                            <li><a class="dropdown-item" href="#">bbb</a></li>
+                            <li><a class="dropdown-item" href="#">ccc</a></li>
+                        </ul>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-dark fw-normal">Chapter Assignment 2</p>
+                                    <p class="text-dark fw-normal">4 hrs ago</p>
+                                </div>
+                                <div class="fw-normal text-dark d-flex justify-content-between align-items-center pt-2">
+                                    <p class="fw-bold">Please check this file…</p>
+                                    <p class="fs-7 text-secondary">Emily Wang</p>
+                                </div>
+                            </a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                                <div class="fs-7 d-flex justify-content-between ">
+                                    <p class="text-dark fw-normal">Chapter Assignment 1</p>
+                                    <p class="text-dark fw-normal">12 hrs ago</p>
+                                </div>
+                                <div class="fw-normal text-dark d-flex justify-content-between align-items-center pt-2">
+                                    <p class="fw-bold">My Homework</p>
+                                    <p class="fs-7 text-secondary">David Xu</p>
+                                </div>
+                            </a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                                <div class="fs-7 d-flex justify-content-between ">
+                                    <p class="text-dark fw-normal">Final Assignment</p>
+                                    <p class="text-dark fw-normal">18 hrs ago</p>
+                                </div>
+                                <div class="fw-normal text-dark d-flex justify-content-between align-items-center pt-2">
+                                    <p class="fw-bold">Have a problem with this…</p>
+                                    <p class="fs-7 text-secondary">Tony Wei</p>
+                                </div>
+                            </a> <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                                <div class="fs-7 d-flex justify-content-between ">
+                                    <p class="text-dark fw-normal">Final Assignment</p>
+                                    <p class="text-dark fw-normal">19 hrs ago</p>
+                                </div>
+                                <div class="fw-normal text-dark d-flex justify-content-between align-items-center pt-2">
+                                    <p class="fw-bold">Did I do it right?</p>
+                                    <p class="fs-7 text-secondary">Christina Lin</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 review">
+                    <p class="fs-7 d-flex justify-content-end pb-2 pt-3 gray-600">2 comments</p>
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="fs-7 text-dark fw-normal pb-2">Chapter Assignment 2 / HTML&CSS</p>
+                                <p class="fw-bold">Please check this file for me, thanks!</p>
+                            </div>
+                            <a href="#" class="link-dark">
+                                <span class="material-icons">
+                                    more_vert
+                                </span>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/emilywang.jpeg" alt="user-pic">
+                                </div>
+                                <div class="ms-2">
+                                    <p class="fw-bold">Emily Wang</p>
+                                    <p class="fs-7 gray-600">10:38 AM (4 hours ago)</p>
+                                </div>
+                            </div>
+                            <p class="card-text pb-3 ps-5 pe-3">Hi Teacher, the attached file is my homework of chapter
+                                2. And
+                                here
+                                comes a question: Why in the following code the height of the <span>div</span> is bigger
+                                than
+                                the height of the <span>img</span> ? There is a gap below the image, but it doesn’t
+                                seems to
+                                be a padding/margin. What is the gap or extra space below image?</p>
+                            <div class="ps-5">
+                                <a href="#"
+                                    class="btn btn-light d-flex align-items-center fw-bold fs-6 justify-content-center border"
+                                    style="width: 12rem;">
+                                    <span class="material-icons pe-2">
+                                        attach_file
+                                    </span>
+                                    HW-2-David.zip
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-  </header>
-
-  <main class="main">
-
-</main>
+</div>
 
     <footer class="footer">
     </footer>
