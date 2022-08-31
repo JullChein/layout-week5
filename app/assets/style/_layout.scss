@@ -1,8 +1,58 @@
-.header {
+nav {
+    padding: 40px 0 32px 32px;
     width: 296px;
+    height: 100vh;
 }
 
-.nav-bg {
-    background: $gray-100;
-    padding: 40px 80px 32px 32px;
+.nav-link.active:active {
+    color: $success;
+}
+
+.nav-link.active:active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid $success;
+}
+
+.nav-link.active:hover {
+    color: $success;
+}
+
+.nav-link.active:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid $success;
+}
+
+.nav-link.active:focus {
+    color: $success;
+}
+
+.nav-link.active:focus::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid $success;
+}
+
+.nav-user {
+    & img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    & a {
+        font-size: 14px;
+        color: $gray-600;
+        text-decoration: none;
+    }
 }
