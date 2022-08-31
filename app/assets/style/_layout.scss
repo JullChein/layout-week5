@@ -1,5 +1,5 @@
 nav {
-    padding: 40px 0 32px 32px;
+    padding: 40px 0 0 32px;
     width: 296px;
     height: 100vh;
 }
@@ -44,6 +44,9 @@ nav {
 }
 
 .nav-user {
+    padding-left: 40px;
+    padding-bottom: 32px;
+
     & img {
         width: 40px;
         height: 40px;
@@ -54,5 +57,51 @@ nav {
         font-size: 14px;
         color: $gray-600;
         text-decoration: none;
+    }
+}
+
+.main {
+    padding: 2rem;
+}
+
+.todo-list {
+    & .fs-7 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    & .header {
+        padding: 32px 32px 18px 32px;
+    }
+
+    & .list-group {
+        border-radius: 0;
+
+        & .active {
+            background-color: #F8F9FA;
+            border: 1px solid #CED4DA;
+            color: #212529;
+        }
+    }
+}
+
+.review {
+    & .fs-7 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    & .gray-600 {
+        color: $gray-600;
+    }
+
+    & img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    & .border {
+        border: 1px solid $gray-400;
     }
 }
