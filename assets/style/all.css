@@ -78,6 +78,8 @@ nav {
 
 .main {
   padding: 2rem; }
+  .main p {
+    margin: 0; }
 
 .todo-list .fs-7 {
   font-size: 12px;
@@ -107,5 +109,9 @@ nav {
 
 .review .border {
   border: 1px solid #ced4da; }
+
+.review .border-bottom {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ced4da; }
 
 /*# sourceMappingURL=all.css.map */
